@@ -1,0 +1,26 @@
+.fluid-container {
+  margin: 25px;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.left-container {
+  margin: 25px;
+}
+
+table {
+  width: 500px;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  color: blue !important;
+  text-decoration: underline !important;
+}

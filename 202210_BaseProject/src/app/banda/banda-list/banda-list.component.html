@@ -1,0 +1,32 @@
+<div class="fluid-container">
+  <div class="content-container">
+    <div class="left-container">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Number Of Members</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let b of bandas">
+            <td>{{b.id}}</td>
+            <td>
+              <a (click)="onSelected(b)">
+                {{b.name}}
+              </a>
+            </td>
+            <td>{{b.numberOfMembers}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Average number of members (rounded up): {{avg}}</p>
+    </div>
+    <div class="right-container">
+      <div *ngIf="selected">
+        <app-banda-detail [bandaDetail]="selectedBanda"></app-banda-detail>
+      </div>
+    </div>
+  </div>
+</div>

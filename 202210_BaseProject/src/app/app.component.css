@@ -1,0 +1,14 @@
+.img-outer-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.img-inner-container {
+  background-color: rgb(215, 215, 215);
+  padding: 25px;
+}
+
+img {
+  width: 500px;
+}
