@@ -9,5 +9,10 @@
     <p class="card-text">
       {{bandaDetail.description}}
     </p>
+    <br>
+    <h6>Popular Songs:</h6>
+    <div *ngFor="let s of bandaDetail.popularSongs">
+      <span>- {{s}}</span>
+    </div>
   </div>
 </div>
